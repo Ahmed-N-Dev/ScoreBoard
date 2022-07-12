@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketBall ScoreBoard</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+
+    <div class="card">
+        <div class="score-list">
+            <h2>Home</h2>
+
+            <div class="score-display">
+                <p id="home-score-display-id" class="score-number">0</p>
+                <div class="extra-info">
+                    <p id="home-foul-id" class="extra-info-details">Foul : 0</p>
+                    <p id="home-leading-team-id" class="extra-info-details">XXXXXX</p>
+                </div>
+            </div>
+
+            <div class="score-btn-grp">
+                <button class="score-btn" type="button" onclick="addOneHome(), leadingGame()">+1</button>
+                <button class="score-btn" type="button" onclick="addTwoHome(), leadingGame()">+2</button>
+                <button class="score-btn" type="button" onclick="addThreeHome(),leadingGame()">+3</button>
+            </div>
+            <div class="setting-btn-grp">
+                <button class="setting-btn" type="button" onclick="clearHome(), leadingGame()">Clear</button>
+                <button class="setting-btn" type="button" onclick="homeFoulCounter()">Foul</button>
+                <button class="setting-btn" type="button" onclick="homeScoreMinusOne(), leadingGame()">-1</button>
+            </div>
+        </div>
+
+        <div class="board-main-control">
+            <button id="new-game-id" class="board-main-control-btns" type="button" onclick="newGame(), stopGameTime()">New Game</button>
+            <button id="start-game-id" class="board-main-control-btns" type="button" onclick="gameTime()">Start the Game</button>
+            <p id="game-time-center"><span class="game-time-format">Time : </span><span class="game-time-format" id="gameMinute"></span> <span class="game-time-format">:</span> <span class="game-time-format" id="gameSecond"></span></p>
+        </div>
+
+        <div class="score-list">
+            <h2>Guest</h2>
+            <div class="score-display">
+                <p id="guest-score-display-id" class="score-number">0</p>
+                <div class="extra-info">
+                    <p id="guest-foul-id" class="extra-info-details">Foul : 0</p>
+                    <p id="guest-leading-team-id" class="extra-info-details">XXXXXX</p>
+                </div>
+            </div>
+
+            <div class="score-btn-grp">
+                <button class="score-btn" type="button" onclick="addOneGuest(), leadingGame()">+1</button>
+                <button class="score-btn" type="button" onclick="addTwoGuest(), leadingGame()">+2</button>
+                <button class="score-btn" type="button" onclick="addThreeGuest(), leadingGame()">+3</button>
+            </div>
+            <div class="setting-btn-grp">
+                <button class="setting-btn" type="button" onclick="clearGuest(), leadingGame()">Clear</button>
+                <button class="setting-btn" type="button" onclick="guestFoulCounter()">Foul</button>
+                <button class="setting-btn" type="button" onclick="guestScoreMinusOne(), leadingGame()">-1</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "cursed-timer" ;
+    src: url(/cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
+}
+
+
+body{
+    background-color: #0C4A6E;
+    color: #38BDF8;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h2{
+    color: #38BDF8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    /* border: 2px solid white; */
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+
+.score-list{
+    width: 40%;
+    text-align: center;
+    /* border: 2px solid white; */
+}
+
+.score-display{
+    width: 400px;
+    height: 55%;
+    background-color: black;
+    color: darkorange;
+    padding: 100px auto;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* border: 2px solid white; */
+}
+
+
+.score-number{
+    font-family: cursed-timer;
+    font-size: 9em;
+    text-align: center;
+    padding: 50px auto 10px auto;
+    margin: 10px auto 10px auto;
+}
+
+.extra-info{
+    margin: 20px 0 0 0;
+    padding: 0;
+    /* border: 1px solid white; */
+}
+
+.extra-info-details{
+    font-family: cursed-timer;
+    font-size: 1.5em;
+    margin: 5px auto 5px auto;
+    padding: 10px auto;
+}
+
+.score-btn-grp{
+    margin: 0 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    /* border: 1px solid white; */
+}
+
+.score-btn{
+    margin: 10px 0;
+    padding: 20px 30px;
+    font-family: cursed-timer;
+    font-size: 2em;
+    background-color: #0C4A6E;
+    color: #38BDF8;
+    border: 3px solid #38BDF8;
+    border-radius: 5px;
+}
+
+.setting-btn-grp{
+    margin: 25px 17%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    /* border: 1px solid white; */
+}
+
+.setting-btn{
+    /* margin: 5px 0; */
+    padding: 10px 30px;
+    font-family: cursed-timer;
+    font-size: 1.5em;
+    background-color: #0C4A6E;
+    color: rgb(107, 116, 189);
+    border: 3px solid rgb(107, 116, 189);
+    border-radius: 5px;
+}
+
+.board-main-control{
+    width:15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board-main-control-btns{
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-family: cursed-timer;
+    font-size: 1em;
+    background-color: #0C4A6E;
+    color: #38BDF8;
+    border: 3px solid #38BDF8;
+    border-radius: 5px;
+}
+
+.game-time-format{
+    font-family: cursed-timer;
+    font-size: 1.3em;
+    text-align: center;
+    color: darkorange;
+}
+
+#game-time-center{
+    text-align: center;
+}
